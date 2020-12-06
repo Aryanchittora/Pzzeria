@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <titile>
+            Pizzeria
+        </titile>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+        <ul>
+           <li style="text-align: left; margin-left: 5px;"><a href="#home">Pizzeria</a></li>
+           <li style="float: right;"><a href="#menu">View Menu</a></li>
+       </ul>
+
+       <section id="home">
+           <div class="menu_div">
+             <button id="menu_list" onclick="getmenu()">
+               Show Menu   
+             </button>
+             <div id="display_menu"></div>
+           </div>
+       </section>
+
+       <section id="menu">
+            <div id="add_menu">
+                <input id="new_pizza" placeholder="Enter New Pizza">
+                <button id="add" onclick="add_item()">
+                    Recommend A New Pizza
+                </button>
+            </div>
+
+            <span>
+                <div class="block1">
+                    <div id="display_addedmenu">
+                    </div>
+                </div>
+            </span>
+       </section>
+    </body>
+</html>
